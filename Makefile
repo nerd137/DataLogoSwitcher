@@ -1,13 +1,11 @@
 TWEAK_NAME = DataLogoSwitcher
 DataLogoSwitcher_OBJCC_FILES = Tweak.x
-DataLogoSwitcher_CFLAGS = -F$(SYSROOT)/System/Library/CoreServices -fobjc-arc
 DataLogoSwitcher_FRAMEWORKS = Foundation UIKit
 DataLogoSwitcher_PRIVATE_FRAMEWORKS = Foundation
 GO_EASY_FOR_ME = 1
 FINALPACKAGE = 1
 
 SDKVERSION = 16.2
-SYSROOT = $(THEOS)/sdks/iPhoneOS16.2.sdk
 
 ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
 	ARCHS = arm64 arm64e
